@@ -1,12 +1,8 @@
 import covasim as cv
 import numpy as np
-from daily_contact_testing import daily_contact_testing
 from iso_quar_cost import isolation_quarantine_cost
 from test_prob_with_curve import test_prob_with_curve
 from tti_models.test_sensitivity_curves import PCRTestSensitivityCurve, LFATestSensitivityCurve
-from contact_tracing_limited import limited_contact_tracing
-from ili_DT import ili_daily_test
-from ili_single_test import ili_single_test
 from infections_by_age import outputs_by_age
 from copy import copy
 from tti_models.infectiousness_profiles import FerrettiInfectionDynamics
@@ -21,8 +17,7 @@ uptake = 0.4
 edge_reduction = np.arange(0.0,1.01,0.05)
 test_specificity = 0.997
 bad_swab_error = 0.1
-#asympt_probs = [0.0, 1/7., 2/7., 3.5/7.]
-#symp_prob = 0.25
+
 trace_probs = {"h": 1., "s": 0.45, "w": 0.45, "c": 0.15}
 trace_time = {"h": 0, "s": 1, "w": 1, "c": 2}
 quar_period = 10

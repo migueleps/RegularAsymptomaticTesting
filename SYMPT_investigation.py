@@ -1,11 +1,8 @@
 import covasim as cv
 import numpy as np
-from daily_contact_testing import daily_contact_testing
 from iso_quar_cost import isolation_quarantine_cost
 from test_prob_with_curve import test_prob_with_curve
 from tti_models.test_sensitivity_curves import PCRTestSensitivityCurve, LFATestSensitivityCurve
-from contact_tracing_limited import limited_contact_tracing
-from ili_DT import ili_daily_test
 from ili_single_test import ili_single_test
 from infections_by_age import outputs_by_age
 from copy import copy
