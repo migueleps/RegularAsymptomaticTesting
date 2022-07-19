@@ -10,3 +10,9 @@ conda env create -f environment.yml
 ```
 
 Change the first line of _requirements.yml_ to change the name of the resulting conda environment (default is tti_network).
+
+Requires Covasim version from the repository:
+
+```
+https://github.com/TTI-modelling/covasim
+```
